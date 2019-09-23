@@ -21,7 +21,7 @@ public class BrowserFactory {
 			System.setProperty("webdriver.gecho.driver", "E:\\ars\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		
+	
 		else 
 			System.out.println("Browser Not supported");
 	

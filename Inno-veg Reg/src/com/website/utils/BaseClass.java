@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseClass {
 
-	public WebDriver driver; 
+	public static WebDriver driver; 
 	
 	public ConfigReader config;
 	public BrowserFactory bf;
@@ -15,6 +15,8 @@ public class BaseClass {
 	public void getBrowser() throws Exception {
 		bf = new BrowserFactory();
 		config = new ConfigReader();
+		
+	 	
 		driver = bf.startApplication(driver, config.getbaseURL(), config.getBrowserName());
 	}
 	
