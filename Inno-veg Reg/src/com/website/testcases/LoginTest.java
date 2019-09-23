@@ -3,10 +3,9 @@ package com.website.testcases;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import com.website.Pages.LoginPage;
 import com.website.utils.BaseClass;
 import com.website.utils.ConfigReader;
-
-import framework.com.website.Pages.LoginPage;
 
 public class LoginTest extends BaseClass{
 
@@ -20,6 +19,7 @@ public class LoginTest extends BaseClass{
 		cr = new ConfigReader();
 		
 		String res = lp.Login("prince@rsk-bsl.com", "Prince@123");
+		System.out.println(res);
 		if(cr.getLoginText().equalsIgnoreCase(res)) {
 			System.out.println("Test Case Passsed Successfully Logged in");
 		}

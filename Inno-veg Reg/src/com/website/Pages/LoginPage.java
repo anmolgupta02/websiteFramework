@@ -1,6 +1,5 @@
-package framework.com.website.Pages;
+package com.website.Pages;
 
-import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
