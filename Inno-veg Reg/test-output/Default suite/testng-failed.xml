@@ -5,8 +5,8 @@
     <classes>
       <class name="com.website.testcases.LoginTest">
         <methods>
+          <include name="LoginWithWrongCred"/>
           <include name="Teardown"/>
-          <include name="SimpleLogin"/>
           <include name="getBrowser"/>
         </methods>
       </class> <!-- com.website.testcases.LoginTest -->
