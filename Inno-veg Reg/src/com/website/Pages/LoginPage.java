@@ -27,6 +27,24 @@ public class LoginPage extends BaseClass{
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[3]/form[1]/ul[1]/li[1]/a[1]")
 	WebElement NameHolder;
 	
+	@FindBy(xpath="//li[contains(text(),'Invalid login attempt.')]")
+	WebElement ErrorHolder;
+	
+	@FindBy(xpath = "//a[@id='profileDropdown']")
+	
+	WebElement MenuDropDown;
+	
+	@FindBy(xpath = "//a[contains(text(),'Logout')]")
+	WebElement logoutButton;
+	
+
+	public WebElement getMenuDropDown() {
+		return MenuDropDown;
+	}
+
+	public WebElement getErrorHolder() {
+		return ErrorHolder;
+	}
 
 	public String getTriggerPath() {
 		return triggerPath;
@@ -50,6 +68,11 @@ public class LoginPage extends BaseClass{
 
 	public WebElement getNameHolder() {
 		return NameHolder;
+	}
+
+	public WebElement getlogoutTrigger() {
+		// TODO Auto-generated method stub
+		return logoutButton;
 	}
 
 }

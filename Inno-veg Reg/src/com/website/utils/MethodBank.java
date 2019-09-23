@@ -52,5 +52,9 @@ public class MethodBank extends BaseClass {
 
 	}
 	
+	public String getErrorMsg(WebElement ErrorDiv) {
+		return ErrorDiv.getText();
+	}
+		
 
 }

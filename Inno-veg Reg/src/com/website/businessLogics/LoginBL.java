@@ -1,5 +1,6 @@
 package com.website.businessLogics;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.website.Pages.LoginPage;
@@ -13,7 +14,7 @@ public class LoginBL extends BaseClass {
 
 	LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
 	
-	public void Login(String Email, String Password) throws Exception {
+	public String Login(String Email, String Password) throws Exception {
 		//WaitForElement(loginTrigger, triggerPath);
 		
 		
@@ -27,7 +28,34 @@ public class LoginBL extends BaseClass {
 
 		Thread.sleep(3000);
 		String res = mb.getText(lp.getNameHolder());
-		//return res;
+		return res;
 
+		
+	}
+	
+	
+	public String LoginWithWrongCred(String Email, String Pass) {
+		
+		
+		mb.clickOnElement(lp.getLoginTrigger());
+		mb.enterbox(lp.getEmailField(), Email);
+		mb.enterbox(lp.getPasswordField(), Pass);
+		mb.clickOnElement(lp.getSubmitButton());
+		
+		String res = mb.getErrorMsg(lp.getErrorHolder());
+		
+		
+		
+		
+		return res;
+		
+	}
+
+
+	public Boolean logout() {
+		
+		mb.clickOnElement(lp.getMenuDropDown());
+		mb.HandleAction(lp.getlogoutTrigger());
+		return true;
 	}
 }

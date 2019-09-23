@@ -29,6 +29,10 @@ public class ConfigReader {
 		return prop.getProperty("loginText");
 	}
 	
+	public String getLoginError() {
+		return prop.getProperty("ErrorMessageCredentials");
+	}
+	
 	
 	
 }
