@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseClass {
 
+	//To handle nullpointer exception use static keyword.
 	public static WebDriver driver; 
 	
 	public ConfigReader config;

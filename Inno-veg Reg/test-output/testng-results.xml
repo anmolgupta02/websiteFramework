@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18820" started-at="2019-09-23T19:07:11 IST" finished-at="2019-09-23T19:07:30 IST">
+  <suite name="Default suite" duration-ms="66213" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:54:20 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18820" started-at="2019-09-23T19:07:11 IST" finished-at="2019-09-23T19:07:30 IST">
-      <class name="com.website.testcases.LoginTest">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.website.testcases.LoginTest@5f9d02cb]" name="getBrowser" is-config="true" duration-ms="6367" started-at="2019-09-23T19:07:11 IST" finished-at="2019-09-23T19:07:18 IST">
+    <test name="Default test" duration-ms="66213" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:54:20 IST">
+      <class name="com.testcases.LoginTest">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.testcases.LoginTest@210366b4]" name="getBrowser" is-config="true" duration-ms="37342" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:53:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="SimpleLogin()[pri:1, instance:com.website.testcases.LoginTest@5f9d02cb]" name="SimpleLogin" duration-ms="7340" started-at="2019-09-23T19:07:18 IST" finished-at="2019-09-23T19:07:25 IST">
+        <test-method status="PASS" signature="SimpleLogin()[pri:1, instance:com.testcases.LoginTest@210366b4]" name="SimpleLogin" duration-ms="23655" started-at="2019-09-26T17:53:51 IST" finished-at="2019-09-26T17:54:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SimpleLogin -->
-        <test-method status="PASS" signature="LoginWithWrongCred()[pri:2, instance:com.website.testcases.LoginTest@5f9d02cb]" name="LoginWithWrongCred" duration-ms="4350" started-at="2019-09-23T19:07:25 IST" finished-at="2019-09-23T19:07:29 IST">
+        <test-method status="PASS" signature="LoginWithWrongCred()[pri:2, instance:com.testcases.LoginTest@210366b4]" name="LoginWithWrongCred" duration-ms="4430" started-at="2019-09-26T17:54:15 IST" finished-at="2019-09-26T17:54:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithWrongCred -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.website.testcases.LoginTest@5f9d02cb]" name="Teardown" is-config="true" duration-ms="720" started-at="2019-09-23T19:07:29 IST" finished-at="2019-09-23T19:07:30 IST">
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.testcases.LoginTest@210366b4]" name="Teardown" is-config="true" duration-ms="735" started-at="2019-09-26T17:54:19 IST" finished-at="2019-09-26T17:54:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- com.website.testcases.LoginTest -->
+      </class> <!-- com.testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

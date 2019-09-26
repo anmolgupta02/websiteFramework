@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="com/website/testcases/" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="E:/jars/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="E:/jars/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="E:/jars/client-combined-3.141.59-sources.jar"/>
@@ -12,5 +21,16 @@
 	<classpathentry kind="lib" path="E:/jars/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="E:/jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/jars/commons-collections4-4.0.jar"/>
+	<classpathentry kind="lib" path="E:/jars/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/jars/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
