@@ -22,6 +22,8 @@ public class HomeRedirectBL extends BaseClass {
 		
 		lbl.Login(ExcelLib.getData("user", 0, 0), ExcelLib.getData("user", 0, 1));
 		
+		System.out.println("Logged In Successfully");
+		
 		Thread.sleep(3000);
 		
 		mb.clickOnElement(hp.getMenuDropDown());
@@ -30,13 +32,16 @@ public class HomeRedirectBL extends BaseClass {
 		
 		Thread.sleep(3000);
 		
+		System.out.println("Inside Admin Portal");
 		//mb.HandleAction(hp.getPageTrigger());
 		
 		Thread.sleep(1000);
 		
 		mb.clickOnElement(hp.getHomeTrigger());
 		
+		mb.WaitForElement(hp.getMetaLocator(),"//label[contains(text(),'Meta Keywords')]");
 		
+		System.out.println("Clicked HomePage ");
 		
 	}
 	

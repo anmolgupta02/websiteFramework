@@ -20,12 +20,18 @@ public class HomeRedirectPage extends BaseClass {
 //	@FindBy(xpath = "	")
 //	WebElement PageTrigger;
 	
-	@FindBy(xpath = "//a[contains(text(),'About Us')]")
+	@FindBy(xpath = "//a[contains(text(),'Home')]")
 	WebElement HomeTrigger;
-
+	
+	@FindBy(xpath = "//label[contains(text(),'Meta Keywords')]")
+	WebElement MetaLocator;
+	
+	
 //	public WebElement getPageTrigger() {
 //		return PageTrigger;
 //	}
+	
+	
 
 	public WebElement getHomeTrigger() {
 		return HomeTrigger;
@@ -38,5 +44,9 @@ public class HomeRedirectPage extends BaseClass {
 	
 	public WebElement getAdminTrigger() {
 		return AdminTrigger;
+	}
+	
+	public WebElement getMetaLocator() {
+		return MetaLocator;
 	}
 }
