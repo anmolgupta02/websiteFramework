@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66213" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:54:20 IST">
+  <suite name="Default suite" duration-ms="137288" started-at="2019-09-26T18:26:58 IST" finished-at="2019-09-26T18:29:15 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66213" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:54:20 IST">
-      <class name="com.testcases.LoginTest">
-        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.testcases.LoginTest@210366b4]" name="getBrowser" is-config="true" duration-ms="37342" started-at="2019-09-26T17:53:14 IST" finished-at="2019-09-26T17:53:51 IST">
+    <test name="Default test" duration-ms="137288" started-at="2019-09-26T18:26:58 IST" finished-at="2019-09-26T18:29:15 IST">
+      <class name="com.testcases.HomeRedirect">
+        <test-method status="PASS" signature="getBrowser()[pri:0, instance:com.testcases.HomeRedirect@210366b4]" name="getBrowser" is-config="true" duration-ms="101016" started-at="2019-09-26T18:26:58 IST" finished-at="2019-09-26T18:28:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="SimpleLogin()[pri:1, instance:com.testcases.LoginTest@210366b4]" name="SimpleLogin" duration-ms="23655" started-at="2019-09-26T17:53:51 IST" finished-at="2019-09-26T17:54:15 IST">
+        <test-method status="PASS" signature="Navigate()[pri:0, instance:com.testcases.HomeRedirect@210366b4]" name="Navigate" duration-ms="35527" started-at="2019-09-26T18:28:39 IST" finished-at="2019-09-26T18:29:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SimpleLogin -->
-        <test-method status="PASS" signature="LoginWithWrongCred()[pri:2, instance:com.testcases.LoginTest@210366b4]" name="LoginWithWrongCred" duration-ms="4430" started-at="2019-09-26T17:54:15 IST" finished-at="2019-09-26T17:54:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginWithWrongCred -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.testcases.LoginTest@210366b4]" name="Teardown" is-config="true" duration-ms="735" started-at="2019-09-26T17:54:19 IST" finished-at="2019-09-26T17:54:20 IST">
+        </test-method> <!-- Navigate -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.testcases.HomeRedirect@210366b4]" name="Teardown" is-config="true" duration-ms="706" started-at="2019-09-26T18:29:15 IST" finished-at="2019-09-26T18:29:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- com.testcases.LoginTest -->
+      </class> <!-- com.testcases.HomeRedirect -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
