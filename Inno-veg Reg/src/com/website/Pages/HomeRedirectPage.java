@@ -31,7 +31,48 @@ public class HomeRedirectPage extends BaseClass {
 //		return PageTrigger;
 //	}
 	
+	@FindBy (xpath = "//input[@id='MetaKeywords']")
+	WebElement MetaKeywords;
 	
+	@FindBy (xpath = "//input[@id='MetaDescription']")
+	WebElement MetaDesc;
+	
+	@FindBy(xpath = "//td[@class='k-editable-area']")
+	WebElement ContentBody;
+	
+	@FindBy (xpath = "//button[@type='submit']")
+	WebElement SubmitButton; 
+	
+	 
+	
+	@FindBy(xpath = "//h4[contains(text(),'Success!')]")
+	WebElement successHolder;
+	
+	
+	public WebElement getSuccessHolder() {
+		return successHolder;
+	}
+	
+
+	public WebElement getMetaKeywords() {
+		return MetaKeywords;
+	}
+
+
+	public WebElement getMetaDesc() {
+		return MetaDesc;
+	}
+
+
+	public WebElement getContentBody() {
+		return ContentBody;
+	}
+
+
+	public WebElement getSubmitButton() {
+		return SubmitButton;
+	}
+
 
 	public WebElement getHomeTrigger() {
 		return HomeTrigger;

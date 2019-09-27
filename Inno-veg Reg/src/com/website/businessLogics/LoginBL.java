@@ -55,7 +55,7 @@ public class LoginBL extends BaseClass {
 	public Boolean logout() {
 		
 		mb.clickOnElement(lp.getMenuDropDown());
-		mb.HandleAction(lp.getlogoutTrigger());
+		mb.HandleClickAction(lp.getlogoutTrigger());
 		return true;
 	}
 }

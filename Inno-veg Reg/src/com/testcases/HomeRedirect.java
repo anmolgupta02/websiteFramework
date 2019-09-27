@@ -9,15 +9,20 @@ public class HomeRedirect extends BaseClass {
 	
 	HomeRedirectBL hbl;
 	
-	@Test
+	@Test(priority = 1)
 	public void Navigate() throws Exception {
 		
 		hbl= new HomeRedirectBL();
 		
 		hbl.GoToHomePage();
 		
+		
 	}
 	
-	
+	@Test(priority = 2)
+	public void FillHomePageInfo() throws Exception{
 
+		hbl.FillHomePageInfo();
+	}
+	
 }
