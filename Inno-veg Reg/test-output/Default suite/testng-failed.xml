@@ -6,7 +6,7 @@
       <class name="com.testcases.HomeRedirect">
         <methods>
           <include name="Teardown"/>
-          <include name="Navigate"/>
+          <include name="FillHomePageInfo"/>
           <include name="getBrowser"/>
         </methods>
       </class> <!-- com.testcases.HomeRedirect -->
