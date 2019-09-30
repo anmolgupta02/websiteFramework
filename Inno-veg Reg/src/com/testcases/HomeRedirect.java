@@ -18,8 +18,6 @@ public class HomeRedirect extends BaseClass {
 		hbl= new HomeRedirectBL();
 		
 		hbl.GoToHomePage();
-	
-		
 	}
 	
 	@Test(priority = 2)

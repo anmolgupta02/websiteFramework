@@ -14,7 +14,9 @@ public class ExcelDataWriter {
 	
 	
 	public String ExcelPath;
+	private XSSFWorkbook wb;
 	
+	@SuppressWarnings("deprecation")
 	public String getData(String SheetName, int RowNum, int ColNum)  throws Exception {
 		
 		ExcelPath = System.getProperty("user.dir")+"/Data/Credentials.xlsx";
@@ -26,13 +28,13 @@ public class ExcelDataWriter {
 		
 		//Workbook workbook = WorkbookFactory.create(fis);
 		
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		wb = new XSSFWorkbook(fis);
 		Cell c = wb.getSheet(SheetName).getRow(RowNum).getCell(ColNum);
 		c.setCellType(Cell.CELL_TYPE_STRING);
 		String data = c.getStringCellValue();
 		data = data.toString();
 		return data;
-		
+	
 	}
 	
 	
