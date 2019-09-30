@@ -1,10 +1,21 @@
 package com.website.utils;
 
+import java.io.File;
+import java.io.IOError;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -148,6 +159,34 @@ public class MethodBank extends BaseClass {
 		catch(Exception ex) {
 			
 		}
+	}
+	
+	//Helper Method to capture a screenshot. 
+	
+	public String captureScreenshot(WebDriver driver) throws IOException {
+		
+		String Path = "";
+		
+		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+		
+		Date date = new Date();
+		
+		Path = System.getProperty("user.dir") + "/Screenshots/" + dateformat.format(date)+".png";
+		
+		File scr = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		FileUtils.copyFile(scr, new File(Path));
+		
+		return Path;
+	}
+	
+	public String getTimeFormat() {
+
+		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+		
+		Date date = new Date();
+		
+		return dateformat.format(date);
 	}
 
 }

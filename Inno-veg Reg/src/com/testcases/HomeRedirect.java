@@ -12,17 +12,19 @@ public class HomeRedirect extends BaseClass {
 	@Test(priority = 1)
 	public void Navigate() throws Exception {
 		
+		extentTest = reports.startTest("Navigate to Home Page calling Login Logic");
+		
 		hbl= new HomeRedirectBL();
 		
 		hbl.GoToHomePage();
-		
-		
-	}
 	
-	@Test(priority = 2)
-	public void FillHomePageInfo() throws Exception{
-
-		hbl.FillHomePageInfo();
+		
 	}
+//	
+//	@Test(priority = 2)
+//	public void FillHomePageInfo() throws Exception{
+//
+//		hbl.FillHomePageInfo();
+//	}
 	
 }

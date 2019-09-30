@@ -5,7 +5,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="com/website/testcases/" kind="src" output="target/classes" path="src">
+	<classpathentry kind="src" output="target/classes" path="src">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -32,5 +32,8 @@
 	<classpathentry kind="lib" path="E:/jars/poi-ooxml-3.17.jar"/>
 	<classpathentry kind="lib" path="E:/jars/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="lib" path="E:/jars/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/jars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="E:/jars/extentreports-2.40.2.jar"/>
+	<classpathentry kind="lib" path="E:/jars/freemarker-2.3.29.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
