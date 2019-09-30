@@ -1,11 +1,13 @@
 package com.website.businessLogics;
 
+import java.io.IOException;
+
+
 import org.openqa.selenium.support.PageFactory;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.website.Pages.HomeRedirectPage;
 import com.website.utils.BaseClass;
-import com.website.utils.ConfigReader;
 import com.website.utils.ExcelDataWriter;
 import com.website.utils.MethodBank;
 
@@ -54,7 +56,7 @@ public class HomeRedirectBL extends BaseClass {
 		}
 	}
 
-	public void FillHomePageInfo() {
+	public void FillHomePageInfo() throws IOException {
 
 		mb.ClearAndWrite(hp.getMetaKeywords(), "Text");
 
@@ -72,7 +74,7 @@ public class HomeRedirectBL extends BaseClass {
 			System.out.println("Home Page Details Submmited successfully");
 			extentTest.log(LogStatus.PASS, "Home Page Details Submmited successfully");
 		} else
-			extentTest.log(LogStatus.FAIL, "Could not submit the details");
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(mb.captureScreenshot(driver)));
 
 	}
 

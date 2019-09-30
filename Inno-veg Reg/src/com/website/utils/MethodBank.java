@@ -180,6 +180,8 @@ public class MethodBank extends BaseClass {
 		return Path;
 	}
 	
+	
+	//Helper Method To get current time in readable format.
 	public String getTimeFormat() {
 
 		DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");

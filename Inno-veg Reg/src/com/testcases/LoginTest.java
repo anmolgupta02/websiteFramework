@@ -1,6 +1,8 @@
 package com.testcases;
 
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 import com.website.businessLogics.LoginBL;
 import com.website.utils.BaseClass;
 import com.website.utils.ConfigReader;
@@ -15,6 +17,7 @@ public class LoginTest extends BaseClass {
 	@Test(priority = 1)
 	public void SimpleLogin() throws Exception {
 
+		extentTest = reports.startTest("Login Test");
 		cr = new ConfigReader();
 		lbl = new LoginBL();
 		edw = new ExcelDataWriter();
@@ -31,6 +34,7 @@ public class LoginTest extends BaseClass {
 		if (cr.getLoginText().equalsIgnoreCase(res)) {
 
 			System.out.println("Test Case Passsed Successfully Logged in");
+			extentTest.log(LogStatus.PASS, "User logged In successfully");
 		}
 
 		Thread.sleep(2000);
@@ -39,6 +43,7 @@ public class LoginTest extends BaseClass {
 
 		if (flag) {
 			System.out.println("Logged Out Successfully");
+			extentTest.log(LogStatus.INFO, "User Logged Out Now");
 		}
 	}
 
@@ -48,12 +53,14 @@ public class LoginTest extends BaseClass {
 		cr = new ConfigReader();
 
 		lbl = new LoginBL();
-
+		
+		extentTest = reports.startTest("Test for login with wrong credentials.");
 		Thread.sleep(3000);
 		String res = lbl.LoginWithWrongCred("anmol@rsk-bsl.com", "Anmol@123");
 
 		if (cr.getLoginError().equalsIgnoreCase(res)) {
 			System.out.println("Test Case Pass for wrong Cred.");
+			extentTest.log(LogStatus.PASS, "Test Case Pass for wrong Cred.");
 		}
 
 		Thread.sleep(200);

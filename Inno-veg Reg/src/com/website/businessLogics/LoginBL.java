@@ -3,6 +3,7 @@ package com.website.businessLogics;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.website.Pages.LoginPage;
 import com.website.utils.BaseClass;
 import com.website.utils.MethodBank;
@@ -25,7 +26,7 @@ public class LoginBL extends BaseClass {
 		mb.enterbox(lp.getPasswordField(), Password);
 		
 		mb.clickOnElement(lp.getSubmitButton());
-
+		extentTest.log(LogStatus.INFO, "Login Button Clicked after entering email and password");
 		Thread.sleep(3000);
 		String res = mb.getText(lp.getNameHolder());
 		return res;
@@ -41,7 +42,7 @@ public class LoginBL extends BaseClass {
 		mb.enterbox(lp.getEmailField(), Email);
 		mb.enterbox(lp.getPasswordField(), Pass);
 		mb.clickOnElement(lp.getSubmitButton());
-		
+		extentTest.log(LogStatus.INFO, "Login Button Clicked after entering invaild email and password");
 		String res = mb.getErrorMsg(lp.getErrorHolder());
 		
 		
