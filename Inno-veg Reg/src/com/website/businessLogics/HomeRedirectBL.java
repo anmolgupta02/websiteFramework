@@ -63,13 +63,16 @@ public class HomeRedirectBL extends BaseClass {
 		mb.HandleKeyBoardEvent(hp.getContentBody(), "This is content Body");
 
 		System.out.println("clicking submit button now");
-
+		extentTest.log(LogStatus.INFO, "Clicked on submit button after filling all the data.");
 		mb.javaScriptScroll(hp.getSubmitButton());
 
 		mb.clickOnElement(hp.getSubmitButton());
 
-		if (mb.verifyText(hp.getSuccessHolder(), "Success!"))
+		if (mb.verifyText(hp.getSuccessHolder(), "Success!")) {
 			System.out.println("Home Page Details Submmited successfully");
+			extentTest.log(LogStatus.PASS, "Home Page Details Submmited successfully");
+		} else
+			extentTest.log(LogStatus.FAIL, "Could not submit the details");
 
 	}
 

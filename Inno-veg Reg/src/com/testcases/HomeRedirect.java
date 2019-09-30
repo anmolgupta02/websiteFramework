@@ -20,11 +20,13 @@ public class HomeRedirect extends BaseClass {
 	
 		
 	}
-//	
-//	@Test(priority = 2)
-//	public void FillHomePageInfo() throws Exception{
-//
-//		hbl.FillHomePageInfo();
-//	}
+	
+	@Test(priority = 2)
+	public void FillHomePageInfo() throws Exception{
+		
+		extentTest = reports.startTest("Fill in home page Information");
+		
+		hbl.FillHomePageInfo();
+	}
 	
 }
