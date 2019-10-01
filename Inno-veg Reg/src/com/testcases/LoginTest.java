@@ -53,7 +53,7 @@ public class LoginTest extends BaseClass {
 		cr = new ConfigReader();
 
 		lbl = new LoginBL();
-		
+
 		extentTest = reports.startTest("Test for login with wrong credentials.");
 		Thread.sleep(3000);
 		String res = lbl.LoginWithWrongCred("anmol@rsk-bsl.com", "Anmol@123");

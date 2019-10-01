@@ -7,47 +7,36 @@ import com.website.utils.BaseClass;
 
 public class HomeRedirectPage extends BaseClass {
 
-	
+	//WebElements Initialization
 
 	@FindBy(xpath = "//a[@id='profileDropdown']")
-	WebElement MenuDropDown;
+	private WebElement MenuDropDown;
 	
 	@FindBy(xpath = "//a[contains(text(),'Admin Settings')]")
-	WebElement AdminTrigger;
-	
-	
-//
-//	@FindBy(xpath = "	")
-//	WebElement PageTrigger;
+	private WebElement AdminTrigger;
 	
 	@FindBy(xpath = "//a[contains(text(),'Home')]")
-	WebElement HomeTrigger;
+	private WebElement HomeTrigger;
 	
 	@FindBy(xpath = "//label[contains(text(),'Meta Keywords')]")
-	WebElement MetaLocator;
-	
-	
-//	public WebElement getPageTrigger() {
-//		return PageTrigger;
-//	}
+	private WebElement MetaLocator;
 	
 	@FindBy (xpath = "//input[@id='MetaKeywords']")
-	WebElement MetaKeywords;
+	private WebElement MetaKeywords;
 	
 	@FindBy (xpath = "//input[@id='MetaDescription']")
-	WebElement MetaDesc;
+	private WebElement MetaDesc;
 	
 	@FindBy(xpath = "//td[@class='k-editable-area']")
-	WebElement ContentBody;
+	private WebElement ContentBody;
 	
 	@FindBy (xpath = "//button[@type='submit']")
-	WebElement SubmitButton; 
-	
-	 
+	private WebElement SubmitButton; 
 	
 	@FindBy(xpath = "//h4[contains(text(),'Success!')]")
-	WebElement successHolder;
+	private WebElement successHolder;
 	
+	//Getter Methods Starts
 	
 	public WebElement getSuccessHolder() {
 		return successHolder;

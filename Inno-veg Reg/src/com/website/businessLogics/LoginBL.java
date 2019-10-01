@@ -1,6 +1,6 @@
 package com.website.businessLogics;
 
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.PageFactory;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -44,10 +44,6 @@ public class LoginBL extends BaseClass {
 		mb.clickOnElement(lp.getSubmitButton());
 		extentTest.log(LogStatus.INFO, "Login Button Clicked after entering invaild email and password");
 		String res = mb.getErrorMsg(lp.getErrorHolder());
-		
-		
-		
-		
 		return res;
 		
 	}

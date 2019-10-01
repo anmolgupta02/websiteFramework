@@ -11,33 +11,33 @@ public class LoginPage extends BaseClass{
 
 
 	String triggerPath = "//*[@id=loginLink";
-
+	
+	//WebElement Initialization.
 	@FindBy(xpath = "//a[contains(text(),'Log in')]")
-	WebElement loginTrigger;
+	private WebElement loginTrigger;
 
 	@FindBy(xpath = "//input[@name='Email']")
-	WebElement EmailField;
+	private WebElement EmailField;
 
 	@FindBy(xpath = "//input[@name='Password']")
-	WebElement PasswordField;
+	private WebElement PasswordField;
 
 	@FindBy(xpath = "//input[@class='btn btn-primary btn-lg px-5']")
-	WebElement SubmitButton;
+	private WebElement SubmitButton;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[3]/form[1]/ul[1]/li[1]/a[1]")
-	WebElement NameHolder;
+	private WebElement NameHolder;
 	
 	@FindBy(xpath="//li[contains(text(),'Invalid login attempt.')]")
-	WebElement ErrorHolder;
+	private WebElement ErrorHolder;
 	
-	@FindBy(xpath = "//a[@id='profileDropdown']")
-	
-	WebElement MenuDropDown;
+	@FindBy(xpath = "//a[@id='profileDropdown']")	
+	private WebElement MenuDropDown;
 	
 	@FindBy(xpath = "//a[contains(text(),'Logout')]")
-	WebElement logoutButton;
+	private WebElement logoutButton;
 	
-
+	//Getters for accesseing the above webElements starts. 
 	public WebElement getMenuDropDown() {
 		return MenuDropDown;
 	}
@@ -71,7 +71,6 @@ public class LoginPage extends BaseClass{
 	}
 
 	public WebElement getlogoutTrigger() {
-		// TODO Auto-generated method stub
 		return logoutButton;
 	}
 

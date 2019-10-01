@@ -20,6 +20,27 @@ public class HomeRedirectBL extends BaseClass {
 	HomeRedirectPage hp = PageFactory.initElements(driver, HomeRedirectPage.class);
 
 	LoginBL lbl = new LoginBL();
+	
+	public void redirectToAdmin() throws Exception {
+		
+		lbl.Login(ExcelLib.getData("user", 0, 0), ExcelLib.getData("user", 0, 1));
+
+		System.out.println("Logged In Successfully");
+		extentTest.log(LogStatus.INFO, "Logged In Successfully");
+
+		Thread.sleep(2000);
+
+		mb.clickOnElement(hp.getMenuDropDown());
+
+		mb.HandleClickAction(hp.getAdminTrigger());
+
+		Thread.sleep(3000);
+
+		System.out.println("Inside Admin Portal");
+
+		extentTest.log(LogStatus.INFO, "Navigated to admin Portal");
+
+	}
 
 	public void GoToHomePage() throws Exception {
 
