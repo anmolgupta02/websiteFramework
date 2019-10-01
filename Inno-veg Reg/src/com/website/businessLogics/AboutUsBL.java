@@ -45,7 +45,7 @@ public class AboutUsBL extends BaseClass{
 		if((mb.getText(pageObject.getSuccessMsgHolder()).equalsIgnoreCase("Success!"))) {
 			extentTest.log(LogStatus.PASS, "The information is saved successfully");
 		}else
-			extentTest.log(LogStatus.FAIL, "Unable to submit the information");
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(mb.captureScreenshot(driver))+"Unable to submit the information");
 	}
 	
 
