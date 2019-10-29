@@ -35,5 +35,6 @@
 	<classpathentry kind="lib" path="E:/jars/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="E:/jars/extentreports-2.40.2.jar"/>
 	<classpathentry kind="lib" path="E:/jars/freemarker-2.3.29.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anmol/Desktop/My formation project jars/allure-java-commons-2.8.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

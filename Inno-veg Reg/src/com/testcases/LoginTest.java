@@ -45,6 +45,10 @@ public class LoginTest extends BaseClass {
 			System.out.println("Logged Out Successfully");
 			extentTest.log(LogStatus.INFO, "User Logged Out Now");
 		}
+		else {
+			System.out.println("Couldnt logged out");
+			extentTest.log(LogStatus.INFO, "Could not logged out" );
+		}
 	}
 
 	@Test(priority = 2)

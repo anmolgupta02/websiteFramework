@@ -13,7 +13,7 @@ public class LoginPage extends BaseClass{
 	String triggerPath = "//*[@id=loginLink";
 	
 	//WebElement Initialization.
-	@FindBy(xpath = "//a[contains(text(),'Log in')]")
+	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	private WebElement loginTrigger;
 
 	@FindBy(xpath = "//input[@name='Email']")
